@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+  <title>psychedelicseals.com</title>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "PsychadelicSeals.css" />
+</head>
+
+<body>
+<div role="banner">
+  <h1>PSYCHEDELIC.SEALS</h1>
+  <h2>The world's coolest band</h2>
+</div>
+<div class="topnav" role="navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#music">Music</a>
+</div>
+<div role="main">
+<div class="ArcticParadice">
+  <img src="TEST.png" alt="Album cover for Arctic Paradice" class="card1">
+  <h3 class="ad">Get our latest album: Arctic Paradice</h3>
+  <button class="accordion">Track Listing</button>
+  <div class="panel">
+    <ol>
+      <li>Track 1</li>
+      <li>Track 2</li>
+      <li>Track 3</li>
+      <li>Track 4</li>
+      <li>Track 5</li>
+    </ol>
+    <h4>Demo of Arctic Paradice:</h4>
+    <audio controls alt="A demo of Arctic Paradice." role="complementary"><source src="SealBarking.mp3"></audio>
+  </div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</div>
+<div class="about">
+  <h3>About</h3>
+  <img src="4-seals.jpg" alt="Top left: Burg; top right: North; bottom left: Dive; bottom right: Jose" id="about">
+  <p>Formed in the artic circle in 2012 by lead vocalist and guitar player Selia Burg and bassist Arf Dive, PSYCHEDELIC.SEALS quickly rose to the top of charts with their attention grabbing sound. Soon after their inception they added drummer Sealene North and backup vocalist José. They found a large audience around the north pole and soon after signed with Frozen Records. They have since gone on make 4 albums, as well as 2 singles.</p>
+</div>
+
+<div class="music">
+<h3 id="music">Music</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Seal.png" alt="Album Cover for Ice Cold Summer" style="width:100%">
+      <div class="container">
+        <h2>Ice Cold Summer</h2>
+        <button class="accordion2">Track Listing</button>
+        <div class="panel">
+          <ol>
+            <li>Track 1</li>
+            <li>Track 2</li>
+            <li>Track 3</li>
+            <li>Track 4</li>
+            <li>Track 5</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<div class="column">
+    <div class="card">
+      <img src="Seal2.jpg" alt="Album Cover for SealStyle" style="width:100%">
+      <div class="container">
+        <h2>SealStyle</h2>
+        <button class="accordion3">Track Listing</button>
+        <div class="panel">
+          <ol>
+            <li>Track 1</li>
+            <li>Track 2</li>
+            <li>Track 3</li>
+            <li>Track 4</li>
+            <li>Track 5</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+var acc = document.getElementsByClassName("accordion3");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<div class="column">
+  <div class="card">
+    <img src="Seal3.jpg" alt="Album Cover for A Seally Love Story" style="width:100%">
+    <div class="container">
+      <h2>A Seally Love Story</h2>
+      <button class="accordion4">Track Listing</button>
+      <div class="panel">
+        <ol>
+          <li>Track 1</li>
+          <li>Track 2</li>
+          <li>Track 3</li>
+          <li>Track 4</li>
+          <li>Track 5</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion4");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  /* Toggle between adding and removing the "active" class,
+  to highlight the button that controls the panel */
+  this.classList.toggle("active");
+
+  /* Toggle between hiding and showing the active panel */
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+</script>
+</div>
+</div>
+</div>
+<div class="Copy" role="contentinfo">
+  <p>©2019 PSYCHEDELIC.SEALS | Made by Julia Hoffman</p>
+</div>
+
+</body>
