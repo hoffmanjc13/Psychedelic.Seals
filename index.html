@@ -51,13 +51,69 @@
 
 </div>
 <div class="about">
-  <h3>About</h3>
-  <img src="4-seals.jpg" alt="Top left: Burg; top right: North; bottom left: Dive; bottom right: Jose" id="about">
+  <h3 id="about">- About -</h3>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="concert.jpg" style="width:100%">
+  <div class="text">Burg (left) and José (right) during a show in Iceland</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="4-seals.jpg" style="width:100%">
+  <div class="text">PSYCHEDELIC.SEALS after a show in northern Ontario. Top left: Burg; top right: North; bottom left: Dive; bottom right: José</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="4-seals2.jpg" style="width:100%">
+  <div class="text">PSYCHEDELIC.SEALS recording Arctic Paradice</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" on", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " on";
+}
+</script>
   <p>Formed in the artic circle in 2012 by lead vocalist and guitar player Selia Burg and bassist Arf Dive, PSYCHEDELIC.SEALS quickly rose to the top of charts with their attention grabbing sound. Soon after their inception they added drummer Sealene North and backup vocalist José. They found a large audience around the north pole and soon after signed with Frozen Records. They have since gone on make 4 albums, as well as 2 singles.</p>
 </div>
 
 <div class="music">
-<h3 id="music">Music</h3>
+<h3 id="music">- Music -</h3>
 <div class="row">
   <div class="column">
     <div class="card">
@@ -177,7 +233,7 @@ acc[i].addEventListener("click", function() {
 </div>
 </div>
 <div class="Copy" role="contentinfo">
-  <p>©2019 PSYCHEDELIC.SEALS | Made by Julia Hoffman</p>
+  <p>Made by Julia Hoffman | ©2019 PSYCHEDELIC.SEALS. All rights reserved.</p>
 </div>
 
 </body>
