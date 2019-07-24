@@ -166,7 +166,8 @@ h1 {
 }
 
 .card img {
-  height: 450px
+  height: auto;
+  width: auto;
 }
 
 * {box-sizing: border-box}
